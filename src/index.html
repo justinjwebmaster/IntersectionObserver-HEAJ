@@ -15,7 +15,29 @@
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
+  <nav>
+    <ul class="menu">
+      <li class="menu__el"><a href="#img1" class="menu__link">IMG1</a></li>
+      <li class="menu__el"><a href="#img2" class="menu__link">IMG2</a></li>
+      <li class="menu__el"><a href="#img3" class="menu__link">IMG3</a></li>
+    </ul>
+  </nav>
 
+  <div class="anim">
+    <ul>
+      <li class="imgContainer" id="img1">
+        <img src="assets/images/licorne.jpg" alt="Une licorne" class="img">
+      </li>
+  
+      <li class="imgContainer rotate" id="img2">
+        <img src="assets/images/licorne.jpg" alt="Une licorne" class="img img-scale">
+      </li>
+      <li class="imgContainer" id="img3">
+        <img src="assets/images/licorne.jpg" alt="Une licorne" class="img img-scale-down">
+      </li>
+    </ul>
+  </div>
+  
 
 </body>
 </html>
