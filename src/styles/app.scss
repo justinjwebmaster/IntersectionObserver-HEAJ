@@ -69,6 +69,7 @@ nav{
         width: 100%;
         height: 100%;
         position: absolute;
+        display: block;
         z-index: 5;
         top: 0;
         left: 0;
@@ -80,6 +81,7 @@ nav{
         width: 100%;
         height: 100%;
         position: absolute;
+        display: block;
         z-index: 10;
         top: 0;
         left: 0;
@@ -94,45 +96,45 @@ nav{
       .img-opacity{
         opacity: 0;
       }
+      .img-scale-down{
+        transform: scale(1.2);
+      }
   
       &.visible {
         
         &::after{
           transform: translateX(-100%);
           transition-duration: .4s;
-          transition-timing-function: ease-in-out;
+          transition-timing-function: ease-out;
         }
   
         &::before{
           transform: translateX(-100%);
-          transition-duration: .2s;
-          transition-delay: .2s;
-          transition-timing-function: ease-in-out;
+          transition-duration: .4s;
+          transition-timing-function: ease-in;
         }
   
         .img-scale{
           transform: scale(1.2);
           transition-duration: .4s;
-          transition-delay: .2s;
-          transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in;
         }
   
         .img-scale-down{
           transform: scale(1);
           transition-duration: .4s;
-          transition-delay: .2s;
-          transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in;
         }
         &.rotate{
           transform: rotate(0deg);
           transition-duration: .4s;
-          transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in;
         }
       }
     } 
   }
 }
 
-.visible ~ .menu__el{
+.visible .menu__el{
   background-color: #CC0;
 }

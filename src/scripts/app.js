@@ -10,7 +10,7 @@ let options = {
   root: null,
 
   // ajoute des marges sur la zone du root
-  rootMargin: '0px',
+  rootMargin: '-50px',
 
   //1.0 => 100% visible
   //0.5 => 50% visible
